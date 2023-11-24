@@ -12,28 +12,27 @@ struct ContentView: View {
     @State private var scale: CGFloat = 1.0
 
     var body: some View {
-        NavigationView {
-            VStack {
-                Button(action: {
-                    // Action to start the map and data
-                    withAnimation {
-                        runnerIsPressed.toggle()
+        VStack {
+            RunnerIcon()
+                .padding()
+                .scaleEffect(scale)
+                .onAppear {
+                    withAnimation(Animation.easeInOut(duration: 1.0).repeatForever()) {
+                        scale = 1.1
                     }
-                }) {
-                    RunnerIcon()
-                        .padding()
-                        .scaleEffect(scale)
-                        .onAppear {
-                            withAnimation(Animation.easeInOut(duration: 1.0).repeatForever()) {
-                                scale = 1.1
-                            }
-                        }
-                    NavigationLink(destination: RunnersDetailsView(), isActive: $runnerIsPressed) {}
                 }
-                VStack {
-                    Text("Let's Move!")
+
+                .onLongPressGesture(minimumDuration: 2.0) {
+                    runnerIsPressed.toggle()
                 }
-            }
+
+                .fullScreenCover(isPresented: $runnerIsPressed) {
+                    RunnersDetailsView()
+                }
+        }
+        VStack {
+            Text("Press And Hold To Start")
+                .padding(.top, 20)
         }
     }
 }
