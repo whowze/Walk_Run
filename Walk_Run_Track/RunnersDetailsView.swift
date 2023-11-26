@@ -9,7 +9,15 @@ import SwiftUI
 
 struct RunnersDetailsView: View {
     var body: some View {
-        Text("You're Gay")
+        Text("Start run")
+        
+        // Timer running
+        
+        // Distance travelled
+        
+        // Map button
+        
+        // Pause and Stop
     }
 }
 
