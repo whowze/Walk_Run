@@ -13,6 +13,7 @@
 		5C104FEB2B0EAEFA006B4F14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C104FEA2B0EAEFA006B4F14 /* Preview Assets.xcassets */; };
 		5C104FF22B0EB7F5006B4F14 /* RunnerIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104FF12B0EB7F5006B4F14 /* RunnerIcon.swift */; };
 		5C104FFC2B113FC1006B4F14 /* RunnersDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104FFB2B113FC1006B4F14 /* RunnersDetailsView.swift */; };
+		5C1050002B140BC2006B4F14 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104FFF2B140BC2006B4F14 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5C104FEA2B0EAEFA006B4F14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C104FF12B0EB7F5006B4F14 /* RunnerIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerIcon.swift; sourceTree = "<group>"; };
 		5C104FFB2B113FC1006B4F14 /* RunnersDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnersDetailsView.swift; sourceTree = "<group>"; };
+		5C104FFF2B140BC2006B4F14 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				5C104FE52B0EAEF9006B4F14 /* ContentView.swift */,
 				5C104FF12B0EB7F5006B4F14 /* RunnerIcon.swift */,
 				5C104FFB2B113FC1006B4F14 /* RunnersDetailsView.swift */,
+				5C104FFF2B140BC2006B4F14 /* MapView.swift */,
 				5C104FE72B0EAEFA006B4F14 /* Assets.xcassets */,
 				5C104FE92B0EAEFA006B4F14 /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			files = (
 				5C104FF22B0EB7F5006B4F14 /* RunnerIcon.swift in Sources */,
 				5C104FFC2B113FC1006B4F14 /* RunnersDetailsView.swift in Sources */,
+				5C1050002B140BC2006B4F14 /* MapView.swift in Sources */,
 				5C104FE62B0EAEF9006B4F14 /* ContentView.swift in Sources */,
 				5C104FE42B0EAEF9006B4F14 /* Walk_Run_TrackApp.swift in Sources */,
 			);
@@ -283,6 +287,7 @@
 				DEVELOPMENT_TEAM = R5B543U47U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I'm going to follow you... if that is ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +317,7 @@
 				DEVELOPMENT_TEAM = R5B543U47U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I'm going to follow you... if that is ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
