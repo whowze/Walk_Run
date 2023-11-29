@@ -14,6 +14,8 @@
 		5C104FF22B0EB7F5006B4F14 /* RunnerIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104FF12B0EB7F5006B4F14 /* RunnerIcon.swift */; };
 		5C104FFC2B113FC1006B4F14 /* RunnersDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104FFB2B113FC1006B4F14 /* RunnersDetailsView.swift */; };
 		5C1050002B140BC2006B4F14 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104FFF2B140BC2006B4F14 /* MapView.swift */; };
+		5CF76D5B2B17DE39005C9294 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76D5A2B17DE39005C9294 /* TimerView.swift */; };
+		5CF76D5D2B17E50A005C9294 /* DistanceTravledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76D5C2B17E50A005C9294 /* DistanceTravledView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		5C104FF12B0EB7F5006B4F14 /* RunnerIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerIcon.swift; sourceTree = "<group>"; };
 		5C104FFB2B113FC1006B4F14 /* RunnersDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnersDetailsView.swift; sourceTree = "<group>"; };
 		5C104FFF2B140BC2006B4F14 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5CF76D5A2B17DE39005C9294 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		5CF76D5C2B17E50A005C9294 /* DistanceTravledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTravledView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +63,9 @@
 			children = (
 				5C104FE32B0EAEF9006B4F14 /* Walk_Run_TrackApp.swift */,
 				5C104FE52B0EAEF9006B4F14 /* ContentView.swift */,
-				5C104FF12B0EB7F5006B4F14 /* RunnerIcon.swift */,
+				5CF76D5F2B17E54D005C9294 /* UIComponents */,
 				5C104FFB2B113FC1006B4F14 /* RunnersDetailsView.swift */,
-				5C104FFF2B140BC2006B4F14 /* MapView.swift */,
+				5CF76D5E2B17E518005C9294 /* Views */,
 				5C104FE72B0EAEFA006B4F14 /* Assets.xcassets */,
 				5C104FE92B0EAEFA006B4F14 /* Preview Content */,
 			);
@@ -74,6 +78,24 @@
 				5C104FEA2B0EAEFA006B4F14 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CF76D5E2B17E518005C9294 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C104FFF2B140BC2006B4F14 /* MapView.swift */,
+				5CF76D5A2B17DE39005C9294 /* TimerView.swift */,
+				5CF76D5C2B17E50A005C9294 /* DistanceTravledView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5CF76D5F2B17E54D005C9294 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				5C104FF12B0EB7F5006B4F14 /* RunnerIcon.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,11 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF76D5B2B17DE39005C9294 /* TimerView.swift in Sources */,
 				5C104FF22B0EB7F5006B4F14 /* RunnerIcon.swift in Sources */,
 				5C104FFC2B113FC1006B4F14 /* RunnersDetailsView.swift in Sources */,
 				5C1050002B140BC2006B4F14 /* MapView.swift in Sources */,
 				5C104FE62B0EAEF9006B4F14 /* ContentView.swift in Sources */,
 				5C104FE42B0EAEF9006B4F14 /* Walk_Run_TrackApp.swift in Sources */,
+				5CF76D5D2B17E50A005C9294 /* DistanceTravledView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +311,7 @@
 				DEVELOPMENT_TEAM = R5B543U47U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "I'm going to track you... if that's ok?";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I'm going to follow you... if that is ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -317,6 +342,7 @@
 				DEVELOPMENT_TEAM = R5B543U47U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "I'm going to track you... if that's ok?";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I'm going to follow you... if that is ok?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

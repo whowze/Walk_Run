@@ -14,7 +14,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            RunnerIcon()
+            RunnerIcon(color: .blue)
                 .padding()
                 .scaleEffect(scale)
                 .onAppear {
