@@ -5,6 +5,7 @@
 //  Created by William Howze on 11/22/23.
 //
 
+import MapKit
 import SwiftUI
 
 struct ContentView: View {
@@ -13,7 +14,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            RunnerIcon()
+            RunnerIcon(color: .blue)
                 .padding()
                 .scaleEffect(scale)
                 .onAppear {
@@ -29,11 +30,16 @@ struct ContentView: View {
                 .fullScreenCover(isPresented: $runnerIsPressed) {
                     RunnersDetailsView()
                 }
+            
+            VStack {
+                Text("Press And Hold To Start")
+                    .padding(.top, 20)
+            }
         }
-        VStack {
-            Text("Press And Hold To Start")
-                .padding(.top, 20)
+        .onAppear {
+            CLLocationManager().requestWhenInUseAuthorization()
         }
+        
     }
 }
 
