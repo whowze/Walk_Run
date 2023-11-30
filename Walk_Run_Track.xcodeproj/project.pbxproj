@@ -15,7 +15,7 @@
 		5C104FFC2B113FC1006B4F14 /* RunnersDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104FFB2B113FC1006B4F14 /* RunnersDetailsView.swift */; };
 		5C1050002B140BC2006B4F14 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104FFF2B140BC2006B4F14 /* MapView.swift */; };
 		5CF76D5B2B17DE39005C9294 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76D5A2B17DE39005C9294 /* TimerView.swift */; };
-		5CF76D5D2B17E50A005C9294 /* DistanceTravledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76D5C2B17E50A005C9294 /* DistanceTravledView.swift */; };
+		5CF76D5D2B17E50A005C9294 /* DistanceTraveledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76D5C2B17E50A005C9294 /* DistanceTraveledView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		5C104FFB2B113FC1006B4F14 /* RunnersDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnersDetailsView.swift; sourceTree = "<group>"; };
 		5C104FFF2B140BC2006B4F14 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		5CF76D5A2B17DE39005C9294 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		5CF76D5C2B17E50A005C9294 /* DistanceTravledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTravledView.swift; sourceTree = "<group>"; };
+		5CF76D5C2B17E50A005C9294 /* DistanceTraveledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTraveledView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 			children = (
 				5C104FFF2B140BC2006B4F14 /* MapView.swift */,
 				5CF76D5A2B17DE39005C9294 /* TimerView.swift */,
-				5CF76D5C2B17E50A005C9294 /* DistanceTravledView.swift */,
+				5CF76D5C2B17E50A005C9294 /* DistanceTraveledView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 				5C1050002B140BC2006B4F14 /* MapView.swift in Sources */,
 				5C104FE62B0EAEF9006B4F14 /* ContentView.swift in Sources */,
 				5C104FE42B0EAEF9006B4F14 /* Walk_Run_TrackApp.swift in Sources */,
-				5CF76D5D2B17E50A005C9294 /* DistanceTravledView.swift in Sources */,
+				5CF76D5D2B17E50A005C9294 /* DistanceTraveledView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
