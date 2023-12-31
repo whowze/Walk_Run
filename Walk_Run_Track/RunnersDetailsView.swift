@@ -45,9 +45,17 @@ struct RunnersDetailsView: View {
                 )
                 .padding()
                 
-                // Map button
                 
-                // Pause and Stop
+                // MARK: Runner Icons - Pause and Stop
+                HStack {
+                    RunnerIcon(color: .yellow)
+                    
+                    Spacer()
+                    
+                    RunnerIcon(color: .red)
+                }
+                .padding(.top, 50)
+                .padding()
             }
         }
     }
