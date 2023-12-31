@@ -23,12 +23,12 @@ struct ContentView: View {
                     }
                 }
 
-                .onLongPressGesture(minimumDuration: 2.0) {
+                .onLongPressGesture(minimumDuration: 1.0) {
                     runnerIsPressed.toggle()
                 }
 
                 .fullScreenCover(isPresented: $runnerIsPressed) {
-                    RunnersDetailsView()
+                        RunnersDetailsView()
                 }
             
             VStack {
