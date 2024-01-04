@@ -8,48 +8,42 @@
 import SwiftUI
 
 struct RunnersDetailsView: View {
-    let customButtonFrame = CGSize(width: 350, height: 100)
-    
+
+    // TODO: figure out how to get a background color - system color
     var body: some View {
-        NavigationView {
-            VStack {
-                NavigationLink(destination: FullScreenMapView()) {
-                    MapView()
-                        .frame(width: customButtonFrame.width, height: customButtonFrame.height)
-                }
-                
-                .clipShape(RoundedRectangle(cornerRadius: 25))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 25)
-                        .stroke(Color.black, lineWidth: 2)
-                )
-                .padding()
-                
+            NavigationView {
                 VStack {
-                    Text("Timer Running")
-                        .frame(width: customButtonFrame.width, height: customButtonFrame.height)
+                    NavigationLink(destination: FullScreenMapView()) {
+                        MapView()
+                            .customButtonFrame()
+                    }
+                    .customButtonStyle()
+                    
+                    VStack {
+                        Text("Timer Running")
+                            .customButtonFrame()
+                    }
+                    .customButtonStyle()
+                    
+                    VStack {
+                        Text("Distance Traveled")
+                            .customButtonFrame()
+                    }
+                    .customButtonStyle()
+                    
+                    
+                    // MARK: Runner Icons - Pause and Stop
+                    HStack {
+                        RunnerIcon(color: .yellow)
+                        
+                        Spacer()
+                        
+                        RunnerIcon(color: .red)
+                    }
+                    .padding(.top, 50)
+                    .padding()
                 }
-                .overlay(
-                    RoundedRectangle(cornerRadius: 25)
-                        .stroke(Color.black, lineWidth: 2)
-                )
-                .padding()
-                
-                VStack {
-                    Text("Distance Traveled")
-                        .frame(width: customButtonFrame.width, height: customButtonFrame.height)
-                }
-                .overlay(
-                    RoundedRectangle(cornerRadius: 25)
-                        .stroke(Color.black, lineWidth: 2)
-                )
-                .padding()
-                
-                // Map button
-                
-                // Pause and Stop
             }
-        }
     }
 }
         
