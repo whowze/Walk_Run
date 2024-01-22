@@ -11,7 +11,7 @@ struct RunnersDetailsView: View {
 
     // TODO: figure out how to get a background color - system color
     var body: some View {
-            NavigationView {
+            NavigationStack {
                 VStack {
                     NavigationLink(destination: FullScreenMapView()) {
                         MapView()
