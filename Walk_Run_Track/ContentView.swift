@@ -27,8 +27,9 @@ struct ContentView: View {
                     runnerIsPressed.toggle()
                 }
 
-                .fullScreenCover(isPresented: $runnerIsPressed) {
+                .popover(isPresented: $runnerIsPressed) {
                         RunnersDetailsView()
+                        .presentationCompactAdaptation(.fullScreenCover)
                 }
             
             VStack {
